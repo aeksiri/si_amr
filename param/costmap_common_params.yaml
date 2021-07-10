@@ -6,8 +6,7 @@ obstacle_range: 15.0
 raytrace_range: 20.0
 
 # "footprint"
-#footprint: [ [-x,y], [x,y], [x,-y] [-x,-y]  ]
-footprint: [ [-0.36,0.56], [0.36,0.56], [0.36,-0.56], [-0.36,-0.56] ]
+footprint: [[0.56,0.36],[0.56,-0.36],[-0.56,-0.36],[-0.56,0.36]]
 
 # Set this factor to be bigger than robot radius
 inflation_radius: 1.0
