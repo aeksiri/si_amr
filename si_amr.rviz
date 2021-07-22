@@ -56,135 +56,33 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz/RobotModel
       Collision Enabled: false
-      Enabled: true
+      Enabled: false
       Links:
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        camera_front_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        camera_front_view_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        caster_front_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        caster_rear_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        caster_wheel_front_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        caster_wheel_rear_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        lidar_front_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        lidar_rear_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
-      Value: true
+      Value: false
       Visual Enabled: true
     - Class: rviz/TF
-      Enabled: true
+      Enabled: false
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_footprint:
-          Value: true
-        base_link:
-          Value: true
-        camera_front_link:
-          Value: true
-        camera_front_view_link:
-          Value: true
-        caster_front_link:
-          Value: true
-        caster_rear_link:
-          Value: true
-        caster_wheel_front_link:
-          Value: true
-        caster_wheel_rear_link:
-          Value: true
-        lidar_front_link:
-          Value: true
-        lidar_rear_link:
-          Value: true
-        map:
-          Value: true
-        odom:
-          Value: true
-        wheel_left_link:
-          Value: true
-        wheel_right_link:
-          Value: true
       Marker Scale: 0.5
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        map:
-          odom:
-            base_footprint:
-              base_link:
-                camera_front_link:
-                  camera_front_view_link:
-                    {}
-                caster_front_link:
-                  caster_wheel_front_link:
-                    {}
-                caster_rear_link:
-                  caster_wheel_rear_link:
-                    {}
-                lidar_front_link:
-                  {}
-                lidar_rear_link:
-                  {}
-                wheel_left_link:
-                  {}
-                wheel_right_link:
-                  {}
+        {}
       Update Interval: 0
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -248,8 +146,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 11.542641639709473
-        Min Value: -19.410396575927734
+        Max Value: 10.081903457641602
+        Min Value: -24.208599090576172
         Value: true
       Axis: X
       Channel Name: intensity
@@ -290,8 +188,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: -0.00033987313508987427
-        Min Value: -0.0015107989311218262
+        Max Value: -0.0003080889582633972
+        Min Value: -0.0008069351315498352
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -367,7 +265,7 @@ Visualization Manager:
           Scale: 1
           Value: true
         Value: true
-      Enabled: true
+      Enabled: false
       Head Length: 0.30000001192092896
       Head Radius: 0.10000000149011612
       Name: PoseWithCovariance
@@ -376,7 +274,7 @@ Visualization Manager:
       Shape: Axes
       Topic: /amcl_pose
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
@@ -425,9 +323,9 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz/Polygon
-      Color: 255; 25; 0
+      Color: 78; 154; 6
       Enabled: true
-      Name: Polygon
+      Name: BaseFootprint
       Topic: /move_base/local_costmap/footprint
       Unreliable: false
       Value: true

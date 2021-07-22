@@ -1,5 +1,16 @@
 #! /bin/bash
 
+killall -9 roslaunch
+sleep 1
+killall -9 gzserver
+sleep 1
+killall -9 gzclient
+sleep 1
+killall -9 rosout
+sleep 1
+killall -9 rosmaster
+sleep 1
+
 source /opt/ros/melodic/setup.bash
 source /home/aeksiri/catkin_ws/devel/setup.bash
 
@@ -25,3 +36,13 @@ sleep 2
 
 roslaunch si_amr move_base.launch
 
+killall -9 roslaunch
+sleep 1
+killall -9 gzserver
+sleep 1
+killall -9 gzclient
+sleep 1
+killall -9 rosout
+sleep 1
+killall -9 rosmaster
+sleep 1
